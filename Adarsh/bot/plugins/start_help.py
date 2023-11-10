@@ -58,7 +58,7 @@ async def start(b, m):
     await StreamBot.send_photo(
         chat_id=m.chat.id,
         photo=Var.PIC,
-        caption =f'<b>ʜᴇʟʟᴏ {m.from_user.mention(style="md")} 🦋\n\nɪ ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ , sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ ᴀɴᴅ ɪ ᴡɪʟʟ sᴇɴᴅ ᴛʜᴇ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ! ɪ ᴀᴍ ᴀʟsᴏ ᴀ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ᴄᴀᴘᴛɪᴏɴ ᴀᴅᴅᴇʀ ʙᴏᴛ 🥂\n\nғᴏʀ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ /tutorial !!</b>',
+        caption =f'<b>ʜᴇʟʟᴏ {m.from_user.mention(style="md")} 🦋\n\nɪ ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ , sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ ᴀɴᴅ ɪ ᴡɪʟʟ sᴇɴᴅ ᴛʜᴇ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ! ɪ ᴀᴍ ᴀʟsᴏ ᴀ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ᴄᴀᴘᴛɪᴏɴ ᴀᴅᴅᴇʀ ʙᴏᴛ 🥂!!</b>',
         reply_markup = InlineKeyboardMarkup(
             [[
             InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ 〆', url=f'http://t.me/{Var.BOT_USERNAME}?startchannel=true')
