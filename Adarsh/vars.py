@@ -12,7 +12,7 @@ class Var(object):
     API_ID = int(getenv('API_ID', '4707251'))
     API_HASH = str(getenv('API_HASH', '800f04bcf6c37b78b52be670789ea81a'))
     BOT_TOKEN = str(getenv('BOT_TOKEN', '6585910708:AAFc8sjxkyrb7bOiC-3f67ziFmi_8ackv8A'))
-    name = str(getenv('name', 'Tentukotta Streaming'))
+    name = str(getenv('name', 'tentukotta'))
     PIC = str(getenv('PIC', 'https://i.ibb.co/r5zsPW1/logo.jpg'))
     TUTORIAL_VIDEO = str(getenv('TUTORIAL_VIDEO', 'https://telegra.ph/file/35bfe15a705d870a47f85.mp4'))
     SHORTENER_API = str(getenv('SHORTENER_API', 'f13ca81474b71eb9453255d75ed304ca21b3bf63'))
@@ -41,6 +41,6 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', "mongodb+srv://tentukotta:148644Jan@tentukottadb.7tgi6ko.mongodb.net/?retryWrites=true&w=majority"))
+    DATABASE_URL = str(getenv('DATABASE_URL', "mongodb+srv://karthickjk:karthick@cluster0.vcjskkq.mongodb.net/?retryWrites=true&w=majority"))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
