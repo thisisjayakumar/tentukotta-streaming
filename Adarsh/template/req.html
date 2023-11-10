@@ -1,0 +1,73 @@
+<!--(c) adarsh-goel-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="https://i.ibb.co/M8S0Zzj/live-streaming.png" itemprop="thumbnailUrl">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>%s</title>
+    <link rel="stylesheet" type='text/css' href="https://adarsh-goel.github.io/resources/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+
+<style>
+    body {
+        background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/46bc87cd-4c4c-4485-8b93-d5f21c581d56/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_large.jpg'); /* Replace 'your_image_url.jpg' with the URL of your background image */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    marquee {
+        font-family: 'Optima', Optima; /* Change font family */
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <div id="file-name">
+           <marquee> %s</marquee>
+        </div>
+    </header>
+
+    <div class="container">
+        <tag src="%s" class="player"></tag>
+    </div>
+    
+    
+    
+    
+    <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+	<script>
+        const controls = [
+              'play-large',
+              'rewind',
+              'play', 
+              'fast-forward', 
+              'progress', 
+              'current-time',
+              'duration',
+              'mute',
+              'volume',
+              'captions',
+              'settings',
+              'pip',
+              'airplay',
+              'download',
+              'fullscreen'
+            ];
+        document.addEventListener('DOMContentLoaded', () => {
+            const player = Plyr.setup('.player', { controls });
+        });
+
+        const body = document.querySelector('body');
+        const footer = document.querySelector('footer');
+    </script>
+</body>
+</html>
