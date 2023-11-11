@@ -28,10 +28,10 @@ class Var(object):
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1001721054").split())
     NO_PORT = bool(getenv('NO_PORT', False))
-    APP_NAME = "Cloudflare"
+    APP_NAME = None
     OWNER_USERNAME = str(getenv('OWNER_USERNAME'))
     if 'DYNO' in environ:
-        ON_HEROKU = False
+        ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
     
     else:
