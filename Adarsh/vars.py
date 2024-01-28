@@ -12,7 +12,7 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv('API_ID', '4707251'))
     API_HASH = str(getenv('API_HASH', '800f04bcf6c37b78b52be670789ea81a'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN', '6585910708:AAFc8sjxkyrb7bOiC-3f67ziFmi_8ackv8A'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '6585910708:AAH7_1Hkgsea7gh8rsBgZ5-GLm6z57Xszh0'))
     name = str(getenv('name', 'tentukotta'))
     PIC = str(getenv('PIC', 'https://i.ibb.co/r5zsPW1/logo.jpg'))
     TUTORIAL_VIDEO = str(getenv('TUTORIAL_VIDEO', 'https://telegra.ph/file/35bfe15a705d870a47f85.mp4'))
