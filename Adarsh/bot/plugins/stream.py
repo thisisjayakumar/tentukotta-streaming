@@ -98,8 +98,6 @@ async def private_receive_handler(c: Client, m: Message):
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        short_stream = await get_shortlink(stream_link)
-        short_online = await get_shortlink(online_link)
        
         msg_text ="""<b>ʏᴏᴜʀ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ❗️</b>\n\n<b>💎 ғɪʟᴇ ɴᴀᴍᴇ : </b> <i>{}</i>\n\n<b>💫 ғɪʟᴇ sɪᴢᴇ : </b> <i>{}</i>\n\n<b>🦋 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ : </b><i>{}</i>\n\n<b>🌈 ᴡᴀᴛᴄʜ ʟɪɴᴋ : </b> <i>{}</i>\n\n<b>🌀 ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ : /tutorial \n\n<i>© @Nova_Botz</i>"""
 
@@ -138,8 +136,6 @@ async def channel_receive_handler(bot, broadcast):
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         auto_caption = """<b><a href=https://t.me/jayhackzproadmin><b>MBM Movies</b></a> {}</b>\n\n<b>➠Fast Download Link : </b><b>{}</b>"""
-        short_stream = await get_shortlink(stream_link)
-        short_online = await get_shortlink(online_link)
         await log_msg.reply_text(
             text=f"**Channel Name:** `{broadcast.chat.title}`\n**CHANNEL ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** {stream_link}",
             quote=True
