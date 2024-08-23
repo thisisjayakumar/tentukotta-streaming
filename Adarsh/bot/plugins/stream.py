@@ -1,4 +1,3 @@
-#(c) Adarsh-Goel
 import os
 import asyncio
 import aiohttp
@@ -138,7 +137,7 @@ async def channel_receive_handler(bot, broadcast):
         log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        auto_caption = """<b><a href=https://t.me/RolexMoviesOXO><b>@RXMovies</b></a> {}</b>\n\n<b>➠Fast Download Link : </b><b>{}</b>"""
+        auto_caption = """<b><a href=https://t.me/jayhackzproadmin><b>MBM Movies</b></a> {}</b>\n\n<b>➠Fast Download Link : </b><b>{}</b>"""
         short_stream = await get_shortlink(stream_link)
         short_online = await get_shortlink(online_link)
         await log_msg.reply_text(
@@ -159,17 +158,3 @@ async def channel_receive_handler(bot, broadcast):
     except Exception as e:
         await bot.send_message(chat_id=Var.BIN_CHANNEL, text=f"**#ERROR_TRACKEBACK:** `{e}`", disable_web_page_preview=True)
         print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ:  **Give me edit permission in updates and bin Channel!{e}**")
-
-
-#-----------------------------------------------------------------#  
-API = Var.SHORTENER_API
-WEB = Var.SHORTENER_URL
-
-async def get_shortlink(link):
-    url = WEB
-    params = {'api': API, 'url': link}
-
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
-            data = await response.json()
-            return data["shortenedUrl"]
