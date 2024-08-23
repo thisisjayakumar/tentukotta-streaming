@@ -16,8 +16,6 @@ class Var(object):
     name = str(getenv('name', 'tentukotta'))
     PIC = str(getenv('PIC', 'https://i.ibb.co/r5zsPW1/logo.jpg'))
     TUTORIAL_VIDEO = str(getenv('TUTORIAL_VIDEO', 'https://telegra.ph/file/35bfe15a705d870a47f85.mp4'))
-    SHORTENER_API = str(getenv('SHORTENER_API', 'f13ca81474b71eb9453255d75ed304ca21b3bf63'))
-    SHORTENER_URL = str(getenv('SHORTENER_URL', 'https://tnshort.net/api'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     BOT_USERNAME = str(getenv('BOT_USERNAME', 'filetolinkmbm_bot')) #without @ symbol
     BOT_NAME = str(getenv('BOT_NAME', 'Tentukotta Streaming Bot'))
